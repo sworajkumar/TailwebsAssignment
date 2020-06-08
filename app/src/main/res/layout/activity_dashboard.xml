@@ -1,0 +1,64 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/details"
+                android:layout_width="0dp"
+                android:textSize="12dp"
+                android:text="See Details"
+                android:textColor="#000000"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/askQuestion"
+                android:textSize="12dp"
+                android:text="New Details"
+                android:textColor="#000000"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+                <ListView
+                    android:padding="@dimen/padding_x2"
+                    android:dividerHeight="@dimen/padding_x2"
+                    android:id="@+id/forumlist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right|bottom"
+                android:padding="3dp">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/askQuestion1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:background="@android:color/black"
+                    android:src="@drawable/ic_action_plus"
+                    app:fabSize="normal" />
+            </RelativeLayout>
+
+       </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
